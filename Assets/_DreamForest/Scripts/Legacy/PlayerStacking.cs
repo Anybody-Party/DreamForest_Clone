@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using _DreamForest.GameServices;
+using _Game.Data;
+using RH.Utilities.ServiceLocator;
 using UnityEngine;
 
 namespace Legacy
@@ -13,16 +16,26 @@ namespace Legacy
 
         private readonly List<StackableItem> stackedItems = new List<StackableItem>();
 
-        public void AddItem(StackableItem item) => 
+        private GlobalEventsService _globalEvents;
+        private DataService _dataService;
+
+        private void Start()
+        {
+            _globalEvents = Services.Instance.Single<GlobalEventsService>();
+            _dataService = Services.Instance.Single<DataService>();
+        }
+
+        public void AddItem(StackableItem item)
+        {
             stackedItems.Add(item);
+            _dataService.GrassCount++;
+            _globalEvents.StackingItemsChanged?.Invoke(this);
+        }
 
         public Transform GetLastItem() => 
             stackedItems.Count > 0 
                 ? stackedItems[stackedItems.Count - 1].transform 
                 : stackingParent;
-
-        public bool HasEmptySpace() => 
-            stackedItems.Count < stackLimit;
 
         private void OnTriggerStay(Collider collider)
         {
@@ -36,11 +49,16 @@ namespace Legacy
 
                 stackedItems.Remove(lastItem);
                 lastItem.transform.parent = null;
+                _dataService.GrassCount--;
+                _globalEvents.StackingItemsChanged?.Invoke(this);
 
                 lastItem.Poolize();
 
                 resourceConsumer.ConsumeItem(lastItem, this);
             }
         }
+
+        public bool HasEmptySpace() => 
+            stackedItems.Count < stackLimit;
     }
 }
