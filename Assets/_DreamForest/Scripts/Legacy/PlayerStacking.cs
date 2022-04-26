@@ -9,8 +9,6 @@ namespace Legacy
 {
     public class PlayerStacking : MonoBehaviour
     {
-        public Action<bool> Looting;
-
         [SerializeField] private Transform stackingParent;
         [SerializeField] private int stackLimit = 20;
 
