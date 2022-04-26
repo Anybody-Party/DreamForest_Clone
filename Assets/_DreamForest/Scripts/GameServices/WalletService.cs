@@ -6,13 +6,13 @@ namespace _Game.Data
 {
     public class WalletService : IWalletService
     {
-        public event Action MoneyCountChanged;
-
         private readonly DataService _data;
+        private readonly GlobalEventsService _globalEvents;
 
         public WalletService()
         {
             _data = Services.Instance.Single<DataService>();
+            _globalEvents = Services.Instance.Single<GlobalEventsService>();
         }
 
         public int Money
@@ -38,7 +38,7 @@ namespace _Game.Data
         private void ChangeMoneyAmount(int amount)
         {
             Money += amount;
-            MoneyCountChanged?.Invoke();
+            _globalEvents.MoneyCountChanged?.Invoke(this);
         }
     }
 }
