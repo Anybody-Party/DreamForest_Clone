@@ -6,22 +6,25 @@ namespace Legacy
 {
     public class ResourceConsumer : MonoBehaviour
     {
-        public event Action<int[]> ResourceGained;
+        public event Action<int> ResourceGained;
 
-        [SerializeField] private int[] neededResources;
-        private int[] defNeededResources = new int[Enum.GetNames(typeof(StackableItem.Type)).Length];
+        public int NeededResources;
+        private int defNeededResources = 0;
 
         private IConsumer consumer;
 
         private static float consumeCooldown = 0.2f;
         private float consumeTimer;
 
+        public bool NeedResources => NeededResources > 0 && consumeTimer <= 0;
+
+        private bool IsFinished => NeededResources == 0;
+
         private void Start()
         {
             consumer = GetComponent<IConsumer>();
-            neededResources.CopyTo(defNeededResources, 0);
 
-            ResourceGained?.Invoke(neededResources);
+            ResourceGained?.Invoke(NeededResources);
         }
 
         private void Update()
@@ -30,20 +33,14 @@ namespace Legacy
                 consumeTimer -= Time.deltaTime;
         }
 
-        private void Finish() => 
-            consumer.PerformOnFilled();
-
-        public bool DoesNeed(StackableItem.Type type) => 
-            neededResources[(int)type] > 0 && consumeTimer <= 0;
-
-        private bool IsFinished() => 
-            neededResources.All(neededResource => neededResource <= 0);
-
         public void ConsumeItem(StackableItem item, PlayerStacking from)
         {
             ConsumeItem(item);
-            consumer.PerformOnReceiveResource(from);
+            consumer.PerformOnReceiveResource(item, from);
         }
+
+        private void Finish() => 
+            consumer.PerformOnFilled();
 
         private void ConsumeItem(StackableItem item)
         {
@@ -51,11 +48,11 @@ namespace Legacy
                 return;
 
             consumeTimer = consumeCooldown;
-            neededResources[(int)item.type]--;
+            NeededResources--;
 
-            ResourceGained?.Invoke(neededResources);
+            ResourceGained?.Invoke(NeededResources);
 
-            if(IsFinished()) 
+            if(IsFinished)
                 Finish();
         }
     }

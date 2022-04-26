@@ -44,7 +44,7 @@ namespace Legacy
                 ResourceConsumer resourceConsumer = collider.gameObject.GetComponent<ResourceConsumer>();
                 StackableItem lastItem = stackedItems[stackedItems.Count-1];
 
-                if(!resourceConsumer.DoesNeed(lastItem.type)) 
+                if(!resourceConsumer.NeedResources)
                     return;
 
                 stackedItems.Remove(lastItem);

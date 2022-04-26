@@ -7,10 +7,11 @@ namespace Legacy
         public enum Type
         {
             Grass,
-            Gold,
+            Grass_1
         }
 
         public Type type;
+        public int ExchangeRate = 1;
 
         private Transform previousStacked;
         [SerializeField] private float spaceY = 1;

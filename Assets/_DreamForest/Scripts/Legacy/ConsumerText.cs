@@ -6,27 +6,22 @@ namespace Legacy
     public class ConsumerText : MonoBehaviour
     {
         private TextMeshProUGUI text;
-    
+        private ResourceConsumer _resourceConsumer;
+
         private void Awake()
         {
             text = GetComponent<TextMeshProUGUI>();
 
-            ResourceConsumer resourceConsumer = transform.GetComponentInParent<ResourceConsumer>();
-            resourceConsumer.ResourceGained += Consumer_ResourceGained;
+            _resourceConsumer = transform.GetComponentInParent<ResourceConsumer>();
+            _resourceConsumer.ResourceGained += Consumer_ResourceGained;
+
+            Consumer_ResourceGained(_resourceConsumer.NeededResources);
         }
 
-        private void Consumer_ResourceGained(int[] neededResources)
-        {
-            text.text = "";
+        private void OnDestroy() => 
+            _resourceConsumer.ResourceGained -= Consumer_ResourceGained;
 
-            for(var n = 0; n < neededResources.Length; n++)
-            {
-                if(neededResources[n] > 0) 
-                    text.text += "<sprite=" + n + ">" + neededResources[n] + "\n";
-            }
-
-            if(neededResources[0] == -1) 
-                text.text = "MAX";
-        }
+        private void Consumer_ResourceGained(int neededResources) => 
+            text.text = "<sprite=0>" + neededResources;
     }
 }

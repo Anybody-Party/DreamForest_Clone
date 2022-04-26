@@ -14,7 +14,7 @@ namespace Legacy
             Destroy(gameObject);
         }
 
-        public void PerformOnReceiveResource(PlayerStacking @from)
+        public void PerformOnReceiveResource(StackableItem item, PlayerStacking @from)
         {
             //todo: place for fx
         }

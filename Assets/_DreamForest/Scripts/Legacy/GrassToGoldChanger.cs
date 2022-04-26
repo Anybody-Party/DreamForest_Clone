@@ -12,8 +12,8 @@ namespace _DreamForest.Legacy
         private void Start() => 
             _wallet = Services.Instance.Single<IWalletService>();
 
-        public void PerformOnReceiveResource(PlayerStacking from) => 
-            _wallet.Add(1);
+        public void PerformOnReceiveResource(StackableItem item, PlayerStacking from) => 
+            _wallet.Add(item.ExchangeRate);
 
         public void PerformOnFilled()
         {
