@@ -1,10 +1,13 @@
-using System;
+using System.Collections.Generic;
 using _DreamForest.GameServices;
+using _DreamForest.Legacy;
+using Legacy;
 using RH.Utilities.ServiceLocator;
+using Resource = _DreamForest.Data.Resource;
 
 namespace _Game.Data
 {
-    public class WalletService : IWalletService
+    public class WalletService : IService
     {
         private readonly DataService _data;
         private readonly GlobalEventsService _globalEvents;
@@ -15,30 +18,20 @@ namespace _Game.Data
             _globalEvents = Services.Instance.Single<GlobalEventsService>();
         }
 
-        public int Money
+        public List<Resource> Resources => _data.SavableData.Resources;
+
+        public float GetAmount(ResourceType type) => Resources.Find(x => x.Type == type).Amount;
+
+        public void Add(float amount, ResourceType type) => 
+            ChangeResourceAmount(amount, type);
+
+        public void Remove(float amount, ResourceType type) => 
+            ChangeResourceAmount(-amount, type);
+
+        private void ChangeResourceAmount(float amount, ResourceType type)
         {
-            get => _data.SavableData.Money;
-            private set => _data.SavableData.Money = value;
-        }
-
-        public void Add(int amount) => 
-            ChangeMoneyAmount(amount);
-
-        public void Remove(int amount)
-        {
-            if (!EnoughMoney(amount))
-                throw new Exception($"Can't remove {amount} coins. Not enough money!");
-
-            ChangeMoneyAmount(-amount);
-        }
-
-        public bool EnoughMoney(int price) => 
-            price >= Money;
-
-        private void ChangeMoneyAmount(int amount)
-        {
-            Money += amount;
-            _globalEvents.MoneyCountChanged?.Invoke(this);
+            Resources.Find(x => x.Type == type).Amount += amount;
+            _globalEvents.ResourcesCountChanged?.Invoke(type, this);
         }
     }
 }

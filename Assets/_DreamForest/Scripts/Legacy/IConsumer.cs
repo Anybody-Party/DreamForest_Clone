@@ -1,8 +1,8 @@
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public interface IConsumer
     {
         void PerformOnFilled();
-        void PerformOnReceiveResource(StackableItem item, PlayerStacking from);
+        void PerformOnReceiveResource();
     }
 }

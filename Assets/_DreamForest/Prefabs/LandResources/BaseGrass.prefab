@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad446ad022504c4db1f10fc532e6e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  _resourceType: 0
+  skinType: 0
 --- !u!114 &3010587117708398873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db080104da126914cbf27b351c522d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resource: {fileID: 2714648946640097211}
+  _resourceObject: {fileID: 2714648946640097211}
   _collider: {fileID: 3729129692745805979}
   _gfx: {fileID: 8162964150386406462}
   _restoreTime: 2

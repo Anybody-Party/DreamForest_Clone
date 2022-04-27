@@ -2,14 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0161cf-671f-4d74-a7a4-3f56b3147365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/ResourcesConsumerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/ResourcesConsumerData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/ServiceLocator/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/ServiceLocator/Services.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Items/Grass 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Items/Grass 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Items/Grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Items/Grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/BaseGrass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/BaseGrass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/Grass Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/Grass Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/Grass1 Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/Grass1 Variant.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Extensions/PlayerStackingExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Extensions/PlayerStackingExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/DataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/DataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/IWalletService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/IWalletService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/WalletService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/WalletService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Construction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Construction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ConsumerText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ConsumerText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/GrassToGoldChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/GrassToGoldChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/IConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/IConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ItemPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ItemPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerStacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerStacking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Resource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceRestorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceRestorer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/StackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/GrassPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/GrassPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/MoneyPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/ResourcePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/MoneyPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/UI/ResourcePanel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +61,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Find-The-Bomb/Assets/_FindKey/Scripts/Common/GlobalEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351e49e2a5bf4fd6beabb458ce2255f3ff600/8d/39d43804/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -59,10 +94,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16452">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16452" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -83,6 +118,7 @@
       <workItem from="1650956853398" duration="6192000" />
       <workItem from="1651004343580" duration="4000" />
       <workItem from="1651007924556" duration="1514000" />
+      <workItem from="1651013637288" duration="5669000" />
     </task>
     <servers />
   </component>
@@ -105,5 +141,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs</url>
+          <line>102</line>
+          <properties documentPath="E:\Projects\Unity\DreamForest_Clone\Assets\_DreamForest\Scripts\Legacy\ResourceConsumer.cs" initialLine="102" containingFunctionPresentation="method 'Save'">
+            <startOffsets>
+              <option value="3023" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3067" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

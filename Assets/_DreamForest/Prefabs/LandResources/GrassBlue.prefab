@@ -123,6 +123,14 @@ PrefabInstance:
       propertyPath: type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2714648946640097211, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
+      propertyPath: skinType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714648946640097211, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
+      propertyPath: _resourceType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2902245988210053367, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -137,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6103971096117776511, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_Name
-      value: Grass1 Variant
+      value: GrassBlue
       objectReference: {fileID: 0}
     - target: {fileID: 6851830103505417417, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_RootOrder

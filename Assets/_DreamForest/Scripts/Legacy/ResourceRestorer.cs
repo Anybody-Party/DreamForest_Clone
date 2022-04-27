@@ -1,22 +1,23 @@
 ﻿using System.Collections;
+using _DreamForest.Legacy;
 using UnityEngine;
 
 namespace Legacy
 {
-    [RequireComponent(typeof(Resource))]
+    [RequireComponent(typeof(ResourceObject))]
     public class ResourceRestorer : MonoBehaviour
     {
-        [SerializeField] private Resource _resource;
+        [SerializeField] private ResourceObject _resourceObject;
         [SerializeField] private Collider _collider;
         [SerializeField] private GameObject _gfx;
 
         [SerializeField] private float _restoreTime;
 
         private void Start() => 
-            _resource.Looted += HideForWhile;
+            _resourceObject.Looted += HideForWhile;
 
         private void OnDestroy() => 
-            _resource.Looted -= HideForWhile;
+            _resourceObject.Looted -= HideForWhile;
 
         private void HideForWhile()
         {

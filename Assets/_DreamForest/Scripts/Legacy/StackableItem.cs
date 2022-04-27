@@ -1,21 +1,14 @@
 using UnityEngine;
 
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public class StackableItem : MonoBehaviour
     {
-        public enum Type
-        {
-            Grass,
-            Grass_1
-        }
+        public SkinType type;
 
-        public Type type;
-        public int ExchangeRate = 1;
-
-        private Transform previousStacked;
         [SerializeField] private float spaceY = 1;
 
+        private Transform previousStacked;
         private float stackSpeed = 25;
 
         private void Update()

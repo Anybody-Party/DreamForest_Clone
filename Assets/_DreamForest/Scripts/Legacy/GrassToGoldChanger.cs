@@ -1,3 +1,4 @@
+using _Game.Common;
 using _Game.Data;
 using Legacy;
 using RH.Utilities.ServiceLocator;
@@ -7,13 +8,17 @@ namespace _DreamForest.Legacy
 {
     public class GrassToGoldChanger : MonoBehaviour, IConsumer
     {
-        private IWalletService _wallet;
+        private WalletService _wallet;
+        private ConfigsService _configs;
 
-        private void Start() => 
-            _wallet = Services.Instance.Single<IWalletService>();
+        private void Start()
+        {
+            _wallet = Services.Instance.Single<WalletService>();
+            _configs = Services.Instance.Single<ConfigsService>();
+        }
 
-        public void PerformOnReceiveResource(StackableItem item, PlayerStacking from) => 
-            _wallet.Add(item.ExchangeRate);
+        public void PerformOnReceiveResource() => 
+            _wallet.Add(_configs.MoneyToGrass, ResourceType.Gold);
 
         public void PerformOnFilled()
         {

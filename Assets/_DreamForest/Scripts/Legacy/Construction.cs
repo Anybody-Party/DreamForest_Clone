@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public class Construction : MonoBehaviour, IConsumer
     {
@@ -14,7 +14,7 @@ namespace Legacy
             Destroy(gameObject);
         }
 
-        public void PerformOnReceiveResource(StackableItem item, PlayerStacking @from)
+        public void PerformOnReceiveResource()
         {
             //todo: place for fx
         }

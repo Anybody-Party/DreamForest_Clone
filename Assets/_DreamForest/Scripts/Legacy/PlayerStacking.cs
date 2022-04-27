@@ -1,58 +1,79 @@
-using System;
 using System.Collections.Generic;
 using _DreamForest.GameServices;
-using _Game.Data;
+using Legacy;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public class PlayerStacking : MonoBehaviour
     {
         [SerializeField] private Transform stackingParent;
         [SerializeField] private int stackLimit = 20;
 
-        private readonly List<StackableItem> stackedItems = new List<StackableItem>();
-
         private GlobalEventsService _globalEvents;
-        private DataService _dataService;
+        private int _addedGrasses;
+
+        private readonly List<StackableItem> stackedItems = new List<StackableItem>();
 
         private void Start()
         {
             _globalEvents = Services.Instance.Single<GlobalEventsService>();
-            _dataService = Services.Instance.Single<DataService>();
+
+            _globalEvents.ItemAdded.AddListener(AddToStackIfGrassEnough);
+            _globalEvents.StackableItemRemoved.AddListener(PoolizeItemIfHave);
         }
 
-        public void AddItem(StackableItem item)
-        {
+        private void OnDestroy() => 
+            _globalEvents.ItemAdded.RemoveListener(AddToStackIfGrassEnough);
+
+        public void AddItem(StackableItem item) => 
             stackedItems.Add(item);
-            _dataService.GrassCount++;
-            _globalEvents.StackingItemsChanged?.Invoke(this);
-        }
 
         public Transform GetLastItem() => 
             stackedItems.Count > 0 
                 ? stackedItems[stackedItems.Count - 1].transform 
                 : stackingParent;
 
+        private void AddToStackIfGrassEnough(SkinType skinType, ResourceObject resourceObject)
+        {
+            if (skinType != SkinType.None) 
+                _addedGrasses++;
+
+            if (_addedGrasses >= 10)
+            {
+                AddItem(skinType, resourceObject);
+                _addedGrasses = 0;
+            }
+        }
+
+        private void PoolizeItemIfHave()
+        {
+            if (stackedItems.Count == 0)
+                return;
+
+            StackableItem item = stackedItems[0];
+
+            stackedItems.RemoveAt(0);
+            item.Poolize();
+        }
+
+        private void AddItem(SkinType skinType, ResourceObject resourceObject)
+        {
+            var item = ItemPool.Instance.UseItem(skinType, resourceObject.transform.position);
+            item.PickUp(this);
+        }
+
         private void OnTriggerStay(Collider collider)
         {
-            if(collider.gameObject.CompareTag("Consumer") && stackedItems.Count > 0)
+            if(collider.gameObject.CompareTag("Consumer"))
             {
                 ResourceConsumer resourceConsumer = collider.gameObject.GetComponent<ResourceConsumer>();
-                StackableItem lastItem = stackedItems[stackedItems.Count-1];
 
-                if(!resourceConsumer.NeedResources)
+                if(!resourceConsumer.CanConsume)
                     return;
 
-                stackedItems.Remove(lastItem);
-                lastItem.transform.parent = null;
-                _dataService.GrassCount--;
-                _globalEvents.StackingItemsChanged?.Invoke(this);
-
-                lastItem.Poolize();
-
-                resourceConsumer.ConsumeItem(lastItem, this);
+                resourceConsumer.ConsumeItem();
             }
         }
 

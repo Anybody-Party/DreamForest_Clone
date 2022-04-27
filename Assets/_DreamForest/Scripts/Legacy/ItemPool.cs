@@ -1,46 +1,44 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using RH.Utilities.SingletonAccess;
 using UnityEngine;
 
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public class ItemPool : MonoBehaviourSingleton<ItemPool>
     {
-        [SerializeField] private GameObject[] itemPrefabs;
-        [SerializeField] private int defaultPoolSize = 5;
+        [SerializeField] private StackableItem[] _skinsPrefabs;
+        [SerializeField] private int _defaultPoolSize = 10;
 
-        private List<StackableItem>[] itemPool = new List<StackableItem>[Enum.GetNames(typeof(StackableItem.Type)).Length];
+        private readonly Dictionary<SkinType, List<StackableItem>> _itemPool = new Dictionary<SkinType, List<StackableItem>>
+        {
+            [SkinType.GrassBlue] = new List<StackableItem>(),
+            [SkinType.GrassGreen] = new List<StackableItem>(),
+        };
 
         private void Start()
         {
-            for(var n = 0; n < itemPool.Length; n++)
-            {
-                itemPool[n] = new List<StackableItem>();
-        
-                for(var i = 0; i < defaultPoolSize; i++) 
-                    CreateItem((StackableItem.Type) n);
-            }
+            foreach (StackableItem skin in _skinsPrefabs)
+                for (var i = 0; i < _defaultPoolSize; i++)
+                    CreateItem(skin.type);
         }
 
-        private void CreateItem(StackableItem.Type type)
+        private void CreateItem(SkinType type)
         {
             int id = (int)type;
-            GameObject prefab = itemPrefabs[id];
+            StackableItem prefab = _skinsPrefabs.First(x => (int)x.type == id);
 
-            GameObject item = Instantiate(prefab, transform.position, Quaternion.identity);
-            PoolizeItem(item.GetComponent<StackableItem>());
+            StackableItem item = Instantiate(prefab, transform.position, Quaternion.identity);
+            PoolizeItem(item);
         }
 
-        public StackableItem UseItem(StackableItem.Type type, Vector3 position)
+        public StackableItem UseItem(SkinType type, Vector3 position)
         {
-            int id = (int)type;
-
-            if(itemPool[id].Count == 0) 
+            if(_itemPool[type].Count == 0) 
                 CreateItem(type);
 
-            StackableItem item = itemPool[id][0];
-            itemPool[id].Remove(item);
+            StackableItem item = _itemPool[type][0];
+            _itemPool[type].Remove(item);
 
             item.transform.position = position;
 
@@ -53,8 +51,7 @@ namespace Legacy
             item.gameObject.SetActive(false);
             item.transform.SetParent(transform, true);
 
-            int id = (int)item.type;
-            itemPool[id].Add(item);
+            _itemPool[item.type].Add(item);
         }
     }
 }

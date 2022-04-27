@@ -16,7 +16,7 @@ namespace _DreamForest.Common
                 .RegisterSingle(_configs)
                 .RegisterSingle(new DataService())
                 .RegisterSingle(new GlobalEventsService())
-                .RegisterSingle<IWalletService>(new WalletService());
+                .RegisterSingle(new WalletService());
 
         protected override void RegisterSystems() =>
             _systems

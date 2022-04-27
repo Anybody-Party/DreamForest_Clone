@@ -1,7 +1,9 @@
+using _DreamForest.Data;
+using Legacy;
 using TMPro;
 using UnityEngine;
 
-namespace Legacy
+namespace _DreamForest.Legacy
 {
     public class ConsumerText : MonoBehaviour
     {
@@ -21,7 +23,12 @@ namespace Legacy
         private void OnDestroy() => 
             _resourceConsumer.ResourceGained -= Consumer_ResourceGained;
 
-        private void Consumer_ResourceGained(int neededResources) => 
-            text.text = "<sprite=0>" + neededResources;
+        private void Consumer_ResourceGained(Resource[] neededResources)
+        {
+            text.text = string.Empty;
+
+            foreach (Resource resource in neededResources)
+                text.text = $"<sprite={(int) resource.Type}>{resource.Amount}";
+        }
     }
 }

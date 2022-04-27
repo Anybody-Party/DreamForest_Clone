@@ -1322,7 +1322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e273ddacc4233f4abcfeb61283458df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: {fileID: 195778752}
+  _valueTitle: {fileID: 195778752}
+  _targetType: 1
 --- !u!114 &308867377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2331,10 +2332,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 649023194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb096e8517fb456d8ef5457b12bd383d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e273ddacc4233f4abcfeb61283458df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: {fileID: 159334576}
+  _valueTitle: {fileID: 159334576}
+  _targetType: 0
 --- !u!1001 &652275127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3735,7 +3737,7 @@ GameObject:
   - component: {fileID: 1139761130}
   - component: {fileID: 1139761129}
   m_Layer: 0
-  m_Name: Grass
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4900,7 +4902,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06a4b909e3d6134ca1450bbbe434fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededResources: 10
+  NeededResources:
+  - Amount: 20
+    Type: 0
+  _id: 11e5927c-4227-49c5-8d9b-e288a309d211
+  consumeCooldown: 0.2
 --- !u!1 &1731185267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,10 +4936,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dee987206ac11d4ba62eadfbd777ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefabs:
-  - {fileID: 1193534450479451441, guid: 80996cbdb89fb174497183aa4f6b2540, type: 3}
-  - {fileID: 1193534450479451441, guid: 2350286ca1aecb64c8655512ec196a01, type: 3}
-  defaultPoolSize: 5
+  _skinsPrefabs:
+  - {fileID: 3204337961715851184, guid: 2350286ca1aecb64c8655512ec196a01, type: 3}
+  - {fileID: 3204337961715851184, guid: 80996cbdb89fb174497183aa4f6b2540, type: 3}
+  _defaultPoolSize: 5
 --- !u!4 &1731185269
 Transform:
   m_ObjectHideFlags: 0
@@ -5071,7 +5077,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06a4b909e3d6134ca1450bbbe434fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NeededResources: 2147483647
+  NeededResources:
+  - Amount: 1.1111111e+36
+    Type: 0
+  _id: 8aed2682-211c-40ec-83d1-30c22a8bb91a
+  consumeCooldown: 0.05
 --- !u!135 &1758430214
 SphereCollider:
   m_ObjectHideFlags: 0

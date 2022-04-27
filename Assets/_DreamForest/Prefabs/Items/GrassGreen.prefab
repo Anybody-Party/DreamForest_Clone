@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1820448001060672167}
   - component: {fileID: 3204337961715851184}
   m_Layer: 0
-  m_Name: Grass
+  m_Name: GrassGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3739c202619712f49b247f5d5dae9643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   spaceY: 0.4
 --- !u!1 &3259304322254805500
 GameObject:
