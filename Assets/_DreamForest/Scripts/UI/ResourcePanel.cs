@@ -1,7 +1,6 @@
 using _DreamForest.GameServices;
 using _DreamForest.Legacy;
 using _Game.Data;
-using Legacy;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,8 +17,8 @@ namespace _DreamForest.UI
 
         private void Start()
         {
-            _wallet = Services.Instance.Single<WalletService>();
-            _globalEvents = Services.Instance.Single<GlobalEventsService>();
+            _wallet = Services.Single<WalletService>();
+            _globalEvents = Services.Single<GlobalEventsService>();
 
             _globalEvents.ResourcesCountChanged.AddListener(UpdateText);
 

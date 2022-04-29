@@ -32,9 +32,9 @@ namespace _DreamForest.Legacy
         {
             consumer = GetComponent<IConsumer>();
 
-            _wallet = Services.Instance.Single<WalletService>();
-            _globalEvents = Services.Instance.Single<GlobalEventsService>();
-            _dataService = Services.Instance.Single<DataService>();
+            _wallet = Services.Single<WalletService>();
+            _globalEvents = Services.Single<GlobalEventsService>();
+            _dataService = Services.Single<DataService>();
 
             _savedData = _dataService.SavableData.ResourcesConsumers.FirstOrDefault(x => x.Id == _id);
             if (_savedData != null)

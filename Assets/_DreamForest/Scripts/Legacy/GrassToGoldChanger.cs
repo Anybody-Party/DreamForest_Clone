@@ -1,4 +1,4 @@
-using _Game.Common;
+using _DreamForest.GameServices;
 using _Game.Data;
 using Legacy;
 using RH.Utilities.ServiceLocator;
@@ -13,8 +13,8 @@ namespace _DreamForest.Legacy
 
         private void Start()
         {
-            _wallet = Services.Instance.Single<WalletService>();
-            _configs = Services.Instance.Single<ConfigsService>();
+            _wallet = Services.Single<WalletService>();
+            _configs = Services.Single<ConfigsService>();
         }
 
         public void PerformOnReceiveResource() => 

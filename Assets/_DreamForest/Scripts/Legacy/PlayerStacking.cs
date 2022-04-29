@@ -18,7 +18,7 @@ namespace _DreamForest.Legacy
 
         private void Start()
         {
-            _globalEvents = Services.Instance.Single<GlobalEventsService>();
+            _globalEvents = Services.Single<GlobalEventsService>();
 
             _globalEvents.ItemAdded.AddListener(AddToStackIfGrassEnough);
             _globalEvents.StackableItemRemoved.AddListener(PoolizeItemIfHave);

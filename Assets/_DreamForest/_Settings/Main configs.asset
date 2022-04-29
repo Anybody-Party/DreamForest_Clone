@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0e04624ac14b788f134ac9fc4c23a7, type: 3}
   m_Name: Main configs
   m_EditorClassIdentifier: 
+  MoneyToGrass: 0.1
+  Speed: 8
+  BoostedSpeed: 12

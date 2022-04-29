@@ -19,8 +19,8 @@ namespace _DreamForest.Legacy
 
         private void Start()
         {
-            _wallet = Services.Instance.Single<WalletService>();
-            _globalEvents = Services.Instance.Single<GlobalEventsService>();
+            _wallet = Services.Single<WalletService>();
+            _globalEvents = Services.Single<GlobalEventsService>();
         }
 
         private void OnTriggerEnter(Collider collider)

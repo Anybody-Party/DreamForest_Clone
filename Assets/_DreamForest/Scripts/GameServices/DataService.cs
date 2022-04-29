@@ -1,10 +1,12 @@
 using _DreamForest.Data;
+using Legacy;
 using RH.Utilities.ServiceLocator;
 
-namespace _Game.Data
+namespace _DreamForest.GameServices
 {
     public class DataService : IService
     {
         public SavableData SavableData = new SavableData();
+        public PlayerController PlayerController;
     }
 }

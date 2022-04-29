@@ -14,8 +14,8 @@ namespace _Game.Data
 
         public WalletService()
         {
-            _data = Services.Instance.Single<DataService>();
-            _globalEvents = Services.Instance.Single<GlobalEventsService>();
+            _data = Services.Single<DataService>();
+            _globalEvents = Services.Single<GlobalEventsService>();
         }
 
         public List<Resource> Resources => _data.SavableData.Resources;

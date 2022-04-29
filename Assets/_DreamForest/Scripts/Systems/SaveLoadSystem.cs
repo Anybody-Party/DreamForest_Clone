@@ -1,9 +1,10 @@
+using _DreamForest.GameServices;
 using _Game.Data;
 using RH.Utilities.PseudoEcs;
 using RH.Utilities.Saving;
 using RH.Utilities.ServiceLocator;
 
-namespace _Game.Logic.Systems
+namespace _DreamForest.Systems
 {
     public class SaveLoadSystem : BaseInitSystem
     {
@@ -11,7 +12,7 @@ namespace _Game.Logic.Systems
 
         public SaveLoadSystem()
         {
-            _dataService = Services.Instance.Single<DataService>();
+            _dataService = Services.Single<DataService>();
         }
 
         public override void Init()
