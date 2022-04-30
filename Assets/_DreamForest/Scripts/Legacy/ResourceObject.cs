@@ -1,7 +1,6 @@
 using System;
 using _DreamForest.GameServices;
 using _Game.Data;
-using Legacy;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 
@@ -11,6 +10,7 @@ namespace _DreamForest.Legacy
     {
         public event Action Looted;
 
+        [SerializeField] private PlayerContactTag _tag;
         [SerializeField] private ResourceType _resourceType;
         [SerializeField] private SkinType skinType;
 
@@ -25,7 +25,7 @@ namespace _DreamForest.Legacy
 
         private void OnTriggerEnter(Collider collider)
         {
-            if (collider.gameObject.CompareTag("LawnMower"))
+            if (collider.gameObject.CompareTag(_tag.ToString()))
             {
                 var currentStacker = collider.GetComponentInParent<PlayerStacking>();
 

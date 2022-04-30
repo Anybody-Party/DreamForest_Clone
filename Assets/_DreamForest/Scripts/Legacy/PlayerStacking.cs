@@ -73,7 +73,7 @@ namespace _DreamForest.Legacy
                 if(!resourceConsumer.CanConsume)
                     return;
 
-                resourceConsumer.ConsumeItem();
+                resourceConsumer.ConsumeResource();
             }
         }
 

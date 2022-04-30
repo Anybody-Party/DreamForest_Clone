@@ -4,12 +4,21 @@ namespace _DreamForest.Legacy
 {
     public class Construction : MonoBehaviour, IConsumer
     {
-        [SerializeField] private GameObject building;
+        [SerializeField] private GameObject[] _objectsToShow;
+
+        [Header("Do not include objects which is child of this")]
+        [SerializeField] private GameObject[] _objectsToDestroy;
 
         public void PerformOnFilled()
         {
-            building.transform.parent = transform.parent;
-            building.SetActive(true);
+            foreach (GameObject objectToShow in _objectsToShow) 
+                objectToShow.SetActive(true);
+
+            foreach (GameObject objectToDestroy in _objectsToDestroy)
+            {
+                objectToDestroy.transform.parent = transform.parent;
+                Destroy(objectToDestroy);
+            }
 
             Destroy(gameObject);
         }

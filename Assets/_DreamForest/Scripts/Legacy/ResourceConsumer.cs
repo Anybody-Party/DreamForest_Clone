@@ -3,6 +3,7 @@ using System.Linq;
 using _DreamForest.Data;
 using _DreamForest.GameServices;
 using _Game.Data;
+using RH.Utilities.Attributes;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ namespace _DreamForest.Legacy
         public event Action<Resource[]> ResourceGained;
 
         public Resource[] NeededResources;
-        [SerializeField] private string _id;
+        [ReadOnly] public string Id;
 
         [Space]
         [SerializeField] private float consumeCooldown = 0.2f;
@@ -26,7 +27,7 @@ namespace _DreamForest.Legacy
         private ResourcesConsumerData _savedData;
 
         private bool IsFinished => NeededResources.All(x => x.Amount <= 0);
-        public bool CanConsume => NeededResources.Any(x => x.Amount > 0 && _wallet.GetAmount(x.Type) > 0);
+        public bool CanConsume => NeededResources.Any(x => x.Amount > 0 && _wallet.GetAmount(x.Type) >= 1);
 
         private void Start()
         {
@@ -36,7 +37,9 @@ namespace _DreamForest.Legacy
             _globalEvents = Services.Single<GlobalEventsService>();
             _dataService = Services.Single<DataService>();
 
-            _savedData = _dataService.SavableData.ResourcesConsumers.FirstOrDefault(x => x.Id == _id);
+            _savedData = _dataService.SavableData.ResourcesConsumers
+                .FirstOrDefault(x => x.Id == Id);
+
             if (_savedData != null)
                 Load(@by: _savedData);
             else
@@ -49,7 +52,7 @@ namespace _DreamForest.Legacy
         {
             _savedData = new ResourcesConsumerData
             {
-                Id = _id,
+                Id = Id,
                 NeededResources = NeededResources,
             };
 
@@ -70,18 +73,16 @@ namespace _DreamForest.Legacy
                 consumeTimer -= Time.deltaTime;
         }
 
-        public void ConsumeItem()
+        public void ConsumeResource()
         {
             if (consumeTimer > 0)
                 return;
 
             consumeTimer = consumeCooldown;
+            Resource neededResource = NeededResources.First(x => x.Amount > 0 && _wallet.GetAmount(x.Type) >= 1);
 
-            Resource neededResource = NeededResources.First(x => x.Amount > 0);
-            float removedValue = Mathf.Min(1, neededResource.Amount);
-
-            _wallet.Remove(removedValue, neededResource.Type);
-            neededResource.Amount -= removedValue;
+            _wallet.Remove(1f, neededResource.Type);
+            neededResource.Amount -= 1f;
 
             InvokeOnConsumedEvents(neededResource);
             Save();
@@ -108,7 +109,7 @@ namespace _DreamForest.Legacy
 #if UNITY_EDITOR
         [ContextMenu("Create id")]
         private void CreateId() => 
-            _id = Guid.NewGuid().ToString();
+            Id = Guid.NewGuid().ToString();
 #endif
     }
 }

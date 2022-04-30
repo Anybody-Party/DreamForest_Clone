@@ -2,12 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0161cf-671f-4d74-a7a4-3f56b3147365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/BaseGizmosShape.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/BaseGizmosShape.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/SceneObjectsRefs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/SceneObjectsRefs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerContactTag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerContactTag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/PlayerTransitionZone.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/PlayerTransitionZone.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/CameraOnSwitchPlayerTransitionSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/CameraOnSwitchPlayerTransitionSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Coroutines/CoroutineLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Coroutines/CoroutineLauncher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/GizmosSphere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/GizmosSphere.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/Editor/ClearSaveTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/Editor/ClearSaveTools.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/ServiceLocator/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/ServiceLocator/Services.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Building.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Building.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Construction.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/Construction.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GoldResource.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GoldResource.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GrassBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GrassBlue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GrassGreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Prefabs/LandResources/GrassGreen.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Construction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/Construction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerStacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PlayerStacking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/SpeedBoost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/SpeedBoost.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +49,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3b66f0ad4e34a55b6ef91ab8487819313c000/83/9859571f/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Find-The-Bomb/Assets/_FindKey/Scripts/Common/GlobalEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351e49e2a5bf4fd6beabb458ce2255f3ff600/8d/39d43804/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/ScrollRect/ScrollRectTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -60,10 +90,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="47356">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="47356" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -85,7 +115,10 @@
       <workItem from="1651004343580" duration="4000" />
       <workItem from="1651007924556" duration="1514000" />
       <workItem from="1651013637288" duration="5867000" />
-      <workItem from="1651188463824" duration="3346000" />
+      <workItem from="1651188463824" duration="3447000" />
+      <workItem from="1651246109573" duration="61000" />
+      <workItem from="1651341408393" duration="33000" />
+      <workItem from="1651350577159" duration="7556000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
 using System;
 using _DreamForest.Legacy;
-using Legacy;
 
 namespace _DreamForest.Data
 {

@@ -1,13 +1,13 @@
-using System;
 using _DreamForest.GameServices;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 
 namespace _DreamForest.LevelObjects
 {
-    public class SpeedBoost : MonoBehaviour
+    public class PlayerTransitionZone : MonoBehaviour
     {
-        public float Time;
+        [SerializeField] private GameObject _playerToShow;
+        [SerializeField] private Transform _oldPlayerMovePosition;
 
         private GlobalEventsService _globalEvents;
 
@@ -18,8 +18,12 @@ namespace _DreamForest.LevelObjects
         {
             if (other.CompareTag("Player"))
             {
-                _globalEvents.SpeedBoostRecieved.Invoke(this);
-                Destroy(gameObject);
+                other.gameObject.SetActive(false);
+                other.transform.position = _oldPlayerMovePosition.position;
+
+                _playerToShow.SetActive(true);
+
+                _globalEvents.PlayerChanged?.Invoke(_playerToShow, this);
             }
         }
     }

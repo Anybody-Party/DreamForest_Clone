@@ -2,8 +2,8 @@ using _DreamForest.Legacy;
 using _DreamForest.LevelObjects;
 using _DreamForest.Systems;
 using _Game.Data;
-using Legacy;
 using RH.Utilities.ServiceLocator;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace _DreamForest.GameServices
@@ -15,5 +15,6 @@ namespace _DreamForest.GameServices
         public UnityEvent StackableItemRemoved = new UnityEvent();
         public UnityEvent<SpeedBoost> SpeedBoostRecieved = new UnityEvent<SpeedBoost>();
         public UnityEvent<float, SpeedBoostSystem> SpeedBoostTimeUpdated = new UnityEvent<float, SpeedBoostSystem>();
+        public UnityEvent<GameObject, PlayerTransitionZone> PlayerChanged = new UnityEvent<GameObject, PlayerTransitionZone>();
     }
 }
