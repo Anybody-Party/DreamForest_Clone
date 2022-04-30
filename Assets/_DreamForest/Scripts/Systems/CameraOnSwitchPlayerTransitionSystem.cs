@@ -28,10 +28,8 @@ namespace _DreamForest.Systems
 
         private void MoveCameraToNewPlayer(GameObject targetPlayer, PlayerTransitionZone arg1)
         {
-            Transform playerTransform = targetPlayer.transform;
-
-            _sceneObjects.Camera.Follow = playerTransform;
-            _sceneObjects.Camera.LookAt = playerTransform;
+            _sceneObjects.Camera.Follow = targetPlayer.transform;
+            _sceneObjects.Camera.LookAt = targetPlayer.transform;
         }
     }
 }

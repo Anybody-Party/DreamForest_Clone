@@ -8,7 +8,7 @@ namespace _DreamForest.LevelObjects
     [RequireComponent(typeof(PlayerController))]
     public class PlayerInitializer : MonoBehaviour
     {
-        private void Start()
+        private void OnEnable()
         {
             Services.Single<DataService>().PlayerController = GetComponent<PlayerController>();
             Destroy(this);
