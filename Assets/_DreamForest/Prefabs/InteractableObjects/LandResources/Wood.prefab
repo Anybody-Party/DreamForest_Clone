@@ -217,23 +217,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3010587117708398873, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
+    - {fileID: 2714648946640097211, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
 --- !u!1 &2488904357203570746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6103971096117776511, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
   m_PrefabInstance: {fileID: 8520797353933824069}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6022344979300446206 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2714648946640097211, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
-  m_PrefabInstance: {fileID: 8520797353933824069}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2488904357203570746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ad446ad022504c4db1f10fc532e6e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6807522155484442802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2902245988210053367, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
@@ -253,18 +243,3 @@ CapsuleCollider:
   m_Height: 2.18
   m_Direction: 1
   m_Center: {x: 0, y: 0.2, z: 0}
---- !u!114 &702742825200271777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2488904357203570746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c493aa1df4c4b17a9dd882a7e768e5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id: Wood_6217e528-b1fb-4c5d-a90a-0551d3019675
-  _resourceObject: {fileID: 6022344979300446206}
-  _healthPoints: 45
