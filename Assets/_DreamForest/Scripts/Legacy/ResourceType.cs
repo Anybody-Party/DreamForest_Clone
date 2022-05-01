@@ -4,5 +4,7 @@
     {
         Grass,
         Gold,
+        Wood,
+        Milk,
     }
 }

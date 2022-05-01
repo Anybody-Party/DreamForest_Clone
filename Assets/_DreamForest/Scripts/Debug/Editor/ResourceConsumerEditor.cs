@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace _DreamForest.Scripts.Editor
+namespace _DreamForest.Debug.Editor
 {
     [CustomEditor(typeof(ResourceConsumer))]
     public class ResourceConsumerEditor : UnityEditor.Editor

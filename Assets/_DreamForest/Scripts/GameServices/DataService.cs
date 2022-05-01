@@ -8,5 +8,14 @@ namespace _DreamForest.GameServices
     {
         public SavableData SavableData = new SavableData();
         public PlayerController PlayerController;
+        
+        private readonly ConfigsService _configs;
+
+        public int AxeDamage => _configs.AxeDamages[SavableData.AxeLevel];
+
+        public DataService()
+        {
+            _configs = Services.Single<ConfigsService>();
+        }
     }
 }

@@ -7,9 +7,11 @@ namespace _DreamForest.GameServices
     public class ConfigsService : ScriptableObject, IService
     {
         public float MoneyToGrass = .1f;
+        public float MoneyToMilk = 10f;
 
         [Header("PlayerController")] 
         public float Speed;
         public float BoostedSpeed;
+        public int[] AxeDamages;
     }
 }
