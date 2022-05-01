@@ -4,10 +4,6 @@
     <list default="true" id="4a0161cf-671f-4d74-a7a4-3f56b3147365" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/BaseGizmosShape.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/BaseGizmosShape.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/PermanentResourceDestroyerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/PermanentResourceDestroyerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PermanentResourceDestroyer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/PermanentResourceDestroyer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" afterDir="false" />
@@ -15,16 +11,70 @@
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/Editor/ClearSaveTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/Editor/ClearSaveTools.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/ISavableData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/ISavableData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Editor/ResourceConsumerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Editor/ResourceConsumerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/DataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/DataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Door.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Door.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Roof.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Buildings/Roof.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Debug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Debug/Borders.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Debug/Borders.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Dirt.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Dirt.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Grass 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Grass 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Grass.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Grass.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Gold.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Gold.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Stone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Stone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Wood 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Wood 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Wood.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Resources/Wood.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Soldier.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Soldier.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Water.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/Water.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/WaterBottom.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Mateirals/WaterBottom.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/Building.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/Building.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/HypercasualCharacterRigged.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/HypercasualCharacterRigged.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/Stone.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Models/Stone.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/ArrowIco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/ArrowIco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/GoldIco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/GoldIco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/JoystickBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/JoystickBackground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/SpearIco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/SpearIco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/StoneIco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/StoneIco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/WoodIco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/WoodIco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/grass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/iconSplash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Graphics/Sprites/iconSplash.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/SpeedBoost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/SpeedBoost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +92,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3b66f0ad4e34a55b6ef91ab8487819313c000/2d/d33c9909/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3b66f0ad4e34a55b6ef91ab8487819313c000/83/9859571f/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Find-The-Bomb/Assets/_FindKey/Scripts/Common/GlobalEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351e49e2a5bf4fd6beabb458ce2255f3ff600/8d/39d43804/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/ScrollRect/ScrollRectTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -82,10 +129,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="47356">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="47356" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -111,6 +158,8 @@
       <workItem from="1651246109573" duration="61000" />
       <workItem from="1651341408393" duration="33000" />
       <workItem from="1651350577159" duration="13257000" />
+      <workItem from="1651409268176" duration="34000" />
+      <workItem from="1651419595707" duration="648000" />
     </task>
     <servers />
   </component>
