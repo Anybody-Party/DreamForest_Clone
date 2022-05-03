@@ -11,6 +11,8 @@ namespace _DreamForest.Data
     {
         public string SaveKey => "Save";
 
+        public int SceneIndex = 1;
+
         public List<Resource> Resources = new List<Resource>
         {
             new Resource{ Amount = 0, Type = ResourceType.Gold},

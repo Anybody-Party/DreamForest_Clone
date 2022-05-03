@@ -5,7 +5,7 @@ using Legacy;
 using UnityEditor;
 using UnityEngine;
 
-namespace _DreamForest.Debug.EditorЫ
+namespace _DreamForest.Debug.Editor
 {
     public static class GameCheats
     {
