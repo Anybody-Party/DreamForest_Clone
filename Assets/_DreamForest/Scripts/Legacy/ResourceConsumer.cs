@@ -16,8 +16,7 @@ namespace _DreamForest.Legacy
         public Resource[] NeededResources;
         [ReadOnly] public string Id;
 
-        [Space]
-        [SerializeField] private float consumeCooldown = 0.2f;
+        private float consumeCooldown = 0.001f;
 
         private IConsumer consumer;
         private float consumeTimer;

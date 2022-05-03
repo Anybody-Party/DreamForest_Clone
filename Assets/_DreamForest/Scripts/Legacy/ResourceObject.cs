@@ -13,6 +13,7 @@ namespace _DreamForest.Legacy
         [SerializeField] private PlayerContactTag _tag;
         [SerializeField] private ResourceType _resourceType;
         [SerializeField] private SkinType skinType;
+        [SerializeField] private float _amount = 1f;
 
         private WalletService _wallet;
         private GlobalEventsService _globalEvents;
@@ -39,6 +40,6 @@ namespace _DreamForest.Legacy
         }
 
         private void Loot() => 
-            _wallet.Add(1f, _resourceType);
+            _wallet.Add(_amount, _resourceType);
     }
 }

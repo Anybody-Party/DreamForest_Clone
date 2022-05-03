@@ -137,15 +137,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2902245988210053367, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.6703
       objectReference: {fileID: 0}
     - target: {fileID: 2902245988210053367, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.6703
       objectReference: {fileID: 0}
     - target: {fileID: 2902245988210053367, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.6703
       objectReference: {fileID: 0}
     - target: {fileID: 3729129692745805979, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_Height
@@ -153,11 +153,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729129692745805979, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_Radius
-      value: 0.64
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 3729129692745805979, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_Center.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729129692745805979, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6103971096117776511, guid: f35f24ede9cbd7d4a88ca17e1b016bd6, type: 3}
       propertyPath: m_Name
@@ -239,7 +243,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2
+  m_Radius: 2.36
   m_Height: 2.18
   m_Direction: 1
   m_Center: {x: 0, y: 0.2, z: 0}
