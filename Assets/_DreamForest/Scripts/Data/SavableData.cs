@@ -11,7 +11,7 @@ namespace _DreamForest.Data
     {
         public string SaveKey => "Save";
 
-        public int SceneIndex = 1;
+        public int Level = 0;
 
         public List<Resource> Resources = new List<Resource>
         {
@@ -19,6 +19,7 @@ namespace _DreamForest.Data
             new Resource{ Amount = 0, Type = ResourceType.Grass},
             new Resource{ Amount = 0, Type = ResourceType.Wood},
             new Resource{ Amount = 0, Type = ResourceType.Milk},
+            new Resource{ Amount = 0, Type = ResourceType.Key},
         };
 
         public List<ResourcesConsumerData> ResourcesConsumers = new List<ResourcesConsumerData>();

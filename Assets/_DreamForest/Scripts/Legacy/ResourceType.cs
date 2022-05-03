@@ -6,5 +6,6 @@
         Gold,
         Wood,
         Milk,
+        Key
     }
 }

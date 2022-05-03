@@ -16,10 +16,7 @@ namespace _DreamForest.Legacy
         public Resource[] NeededResources;
         [ReadOnly] public string Id;
 
-        private float consumeCooldown = 0.001f;
-
         private IConsumer consumer;
-        private float consumeTimer;
         private WalletService _wallet;
         private GlobalEventsService _globalEvents;
         private DataService _dataService;
@@ -66,18 +63,8 @@ namespace _DreamForest.Legacy
                 Finish();
         }
 
-        private void Update()
-        {
-            if(consumeTimer > 0)
-                consumeTimer -= Time.deltaTime;
-        }
-
         public void ConsumeResource()
         {
-            if (consumeTimer > 0)
-                return;
-
-            consumeTimer = consumeCooldown;
             Resource neededResource = NeededResources.First(x => x.Amount > 0 && _wallet.GetAmount(x.Type) >= 1);
 
             _wallet.Remove(1f, neededResource.Type);

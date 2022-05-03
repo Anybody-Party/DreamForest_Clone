@@ -24,6 +24,9 @@ namespace _DreamForest.Common
             //game logic
                 .Add(new SaveLoadSystem())
                 .Add(new SpeedBoostSystem())
+                .Add(new LoadPlayerSystem())
+                .Add(new GoToNextLevelSystem())
+                .Add(new RemoveCompletedLevelsSystem())
             //visual
                 .Add(new CameraOnSwitchPlayerTransitionSystem());
     }

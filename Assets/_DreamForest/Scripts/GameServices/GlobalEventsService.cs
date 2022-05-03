@@ -16,5 +16,7 @@ namespace _DreamForest.GameServices
         public UnityEvent<SpeedBoost> SpeedBoostRecieved = new UnityEvent<SpeedBoost>();
         public UnityEvent<float, SpeedBoostSystem> SpeedBoostTimeUpdated = new UnityEvent<float, SpeedBoostSystem>();
         public UnityEvent<GameObject, PlayerTransitionZone> PlayerChanged = new UnityEvent<GameObject, PlayerTransitionZone>();
+        public UnityEvent GoToNewLevelIntent = new UnityEvent();
+        public UnityEvent GoToNewLevel = new UnityEvent();
     }
 }

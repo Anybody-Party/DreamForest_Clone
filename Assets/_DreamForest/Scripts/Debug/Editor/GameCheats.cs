@@ -2,6 +2,7 @@ using System.Linq;
 using _DreamForest.GameServices;
 using _DreamForest.LevelObjects;
 using Legacy;
+using RH.Utilities.ServiceLocator;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ namespace _DreamForest.Debug.Editor
 {
     public static class GameCheats
     {
-        [MenuItem("🎮 Game/🐱‍💻 Cheats/Show all locations(without entrance)")]
+        [MenuItem("🎮 Game/🐱‍💻 Cheats/Show all locations(without entrance) %#w")]
         public static void ShowAllLocations() =>
             Object.FindObjectsOfType<Location>(true)
                 .ToList()
@@ -27,7 +28,7 @@ namespace _DreamForest.Debug.Editor
             Object.FindObjectOfType<PlayerController>()
                 .ChangeSpeed(Resources.Load<ConfigsService>("Main configs").Speed * 3f);
 
-        [MenuItem("🎮 Game/🐱‍💻 Cheats/Set normal player speed %#w")]
+        [MenuItem("🎮 Game/🐱‍💻 Cheats/Set normal player speed")]
         public static void SetNormalPlayerSpeed() =>
             Object.FindObjectOfType<PlayerController>()
                 .ChangeSpeed(Resources.Load<ConfigsService>("Main configs").Speed);
@@ -38,5 +39,12 @@ namespace _DreamForest.Debug.Editor
             SetNormalPlayerSpeed();
             HideAllLocationsExceptFirst();
         }
+
+        [MenuItem("🎮 Game/🐱‍💻 Cheats/Go to new level %#e")]
+        public static void GoToNewLevel() => 
+            Services
+                .Single<GlobalEventsService>()
+                .GoToNewLevelIntent
+                .Invoke();
     }
 }

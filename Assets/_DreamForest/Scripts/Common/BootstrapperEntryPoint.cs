@@ -20,6 +20,6 @@ namespace _DreamForest.Common
             _systems
                 //game logic
                 .Add(new SaveLoadSystem())
-                .Add(new LoadLevelSystem());
+                .Add(new LoadPlayerSystem());
     }
 }
