@@ -6,7 +6,7 @@ namespace _DreamForest.Data
     [Serializable]
     public class Resource
     {
-        public float Amount;
+        public int Amount;
         public ResourceType Type;
     }
 }

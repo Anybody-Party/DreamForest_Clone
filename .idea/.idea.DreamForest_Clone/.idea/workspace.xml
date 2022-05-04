@@ -6,12 +6,13 @@
       <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/BaseGizmosShape.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/SceneObjects/DontDestroyOnLoad.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/SceneObjects/DontDestroyOnLoad.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/ToNextLevelTransition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/ToNextLevelTransition.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/GoToNextLevelSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/GoToNextLevelSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/GoToNextLevelCheatButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/GoToNextLevelCheatButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/IncreaseSpeedCheatButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/IncreaseSpeedCheatButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/ExchangeResourcesObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/ExchangeResourcesObject.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamForest_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Attributes/ReadOnlyAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/GizmosSphere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/Gizmos/GizmosSphere.cs" afterDir="false" />
@@ -19,30 +20,15 @@
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/ISavableData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/ISavableData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/PlayerPrefsSaving/SavableDataExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Utilities/Utilities/UI/BaseActionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Utilities/Utilities/UI/BaseActionButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Bootstrapper.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Bootstrapper.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Level0.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Level0.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Level1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Level1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/BootstrapperEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/BootstrapperEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Common/EntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/AddResourceButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/AddResourceButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/ChangeScenes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/ChangeScenes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/GameCheats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Debug/Editor/GameCheats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/GlobalEventsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/SceneObjectsRefs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/SceneObjectsRefs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/ConfigsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/WalletService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/GameServices/WalletService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/GrassToGoldChanger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/GrassToGoldChanger.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceConsumer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/LoadLevelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/LoadPlayerSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/LoadLevelSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Systems/LoadPlayerSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/_Settings/Resources/Main configs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/_Settings/Resources/Main configs.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/Legacy/ResourceObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/BuildingWithGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_DreamForest/Scripts/LevelObjects/BuildingWithGold.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351e49e2a5bf4fd6beabb458ce2255f3ff600/8d/39d43804/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/ScrollRect/ScrollRectTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Manipulators/Move/MoveItemModeRipple.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_DreamForest/Scripts/Data/SavableData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b9/2583d81d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -133,7 +120,7 @@
       <workItem from="1651478130115" duration="781000" />
       <workItem from="1651500933378" duration="14332000" />
       <workItem from="1651536091498" duration="1636000" />
-      <workItem from="1651600855333" duration="7574000" />
+      <workItem from="1651600855333" duration="9664000" />
     </task>
     <servers />
   </component>

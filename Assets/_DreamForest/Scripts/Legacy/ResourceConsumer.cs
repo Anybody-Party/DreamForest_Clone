@@ -67,8 +67,8 @@ namespace _DreamForest.Legacy
         {
             Resource neededResource = NeededResources.First(x => x.Amount > 0 && _wallet.GetAmount(x.Type) >= 1);
 
-            _wallet.Remove(1f, neededResource.Type);
-            neededResource.Amount -= 1f;
+            _wallet.Remove(1, neededResource.Type);
+            neededResource.Amount -= 1;
 
             InvokeOnConsumedEvents(neededResource);
             Save();

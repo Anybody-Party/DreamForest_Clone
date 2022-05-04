@@ -13,7 +13,7 @@ namespace _DreamForest.Legacy
         [SerializeField] private PlayerContactTag _tag;
         [SerializeField] private ResourceType _resourceType;
         [SerializeField] private SkinType skinType;
-        [SerializeField] private float _amount = 1f;
+        [SerializeField] private int _amount = 1;
 
         private WalletService _wallet;
         private GlobalEventsService _globalEvents;

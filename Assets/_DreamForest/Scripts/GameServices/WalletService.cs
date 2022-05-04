@@ -22,13 +22,13 @@ namespace _Game.Data
 
         public float GetAmount(ResourceType type) => Resources.Find(x => x.Type == type).Amount;
 
-        public void Add(float amount, ResourceType type) => 
+        public void Add(int amount, ResourceType type) => 
             ChangeResourceAmount(amount, type);
 
-        public void Remove(float amount, ResourceType type) => 
+        public void Remove(int amount, ResourceType type) => 
             ChangeResourceAmount(-amount, type);
 
-        private void ChangeResourceAmount(float amount, ResourceType type)
+        private void ChangeResourceAmount(int amount, ResourceType type)
         {
             Resources.Find(x => x.Type == type).Amount += amount;
             _globalEvents.ResourcesCountChanged?.Invoke(type, this);

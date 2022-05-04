@@ -7,7 +7,7 @@ namespace _DreamForest.LevelObjects
 {
     public class BuildingWithGold : MonoBehaviour
     {
-        [SerializeField] private float _amount;
+        [SerializeField] private int _amount;
         [SerializeField] private ResourceType _type;
 
         private WalletService _wallet;

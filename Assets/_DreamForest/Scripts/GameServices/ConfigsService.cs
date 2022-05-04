@@ -8,6 +8,7 @@ namespace _DreamForest.GameServices
     {
         public float MoneyToGrass = .1f;
         public float MoneyToMilk = 10f;
+        public float GrassToMilk = 20;
 
         [Header("PlayerController")] 
         public float Speed;

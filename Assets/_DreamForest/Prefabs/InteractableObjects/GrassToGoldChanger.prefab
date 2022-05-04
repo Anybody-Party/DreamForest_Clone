@@ -600,8 +600,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5222012078431388124}
   - component: {fileID: 5222012078431388122}
-  - component: {fileID: 5222012078431388123}
   - component: {fileID: 5222012078431388121}
+  - component: {fileID: 2025333922209736640}
   m_Layer: 0
   m_Name: GrassToGoldChanger
   m_TagString: Consumer
@@ -640,22 +640,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeededResources:
-  - Amount: 1.1111111e+36
+  - Amount: 0
     Type: 0
-  Id: Game_1c20d2b6-7a77-4f7c-8b6b-adb30a3a4f5b
-  consumeCooldown: 0.05
---- !u!114 &5222012078431388123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5222012078431388125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0696111d90542ed80971d5d1c0613a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  Id: GrassToGoldChanger_4d6b71ec-76e0-49ac-b252-7c5e05d80b5f
 --- !u!135 &5222012078431388121
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -669,6 +656,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 7.38
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2025333922209736640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5222012078431388125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c28e900d044cf7a02603d5acf5bc5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _type: 1
+  _exchangeRate: 10
 --- !u!1 &5222012078438641208
 GameObject:
   m_ObjectHideFlags: 0
