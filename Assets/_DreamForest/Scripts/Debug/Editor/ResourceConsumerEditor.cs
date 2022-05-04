@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace _DreamForest.Debug.Editor
 {
-    [CustomEditor(typeof(ResourceConsumer))]
+    [CustomEditor(typeof(ResourceConsumer)), CanEditMultipleObjects]
     public class ResourceConsumerEditor : UnityEditor.Editor
     {
         private void OnEnable()

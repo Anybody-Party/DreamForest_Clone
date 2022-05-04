@@ -640,9 +640,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeededResources:
-  - Amount: 0
+  - Amount: 2147483647
     Type: 0
-  Id: GrassToGoldChanger_4d6b71ec-76e0-49ac-b252-7c5e05d80b5f
+  Id: GrassToGoldChanger_a36217e7-ab3a-4a43-9aa1-25f4824174f5
 --- !u!135 &5222012078431388121
 SphereCollider:
   m_ObjectHideFlags: 0

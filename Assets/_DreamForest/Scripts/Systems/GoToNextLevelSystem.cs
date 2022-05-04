@@ -1,3 +1,4 @@
+using _DreamForest.Data;
 using _DreamForest.GameServices;
 using _DreamForest.LevelObjects;
 using RH.Utilities.PseudoEcs;
@@ -31,6 +32,7 @@ namespace _DreamForest.Systems
             newIndex %= _sceneObjectsRefs.SpawnPoints.Length;
 
             _data.SavableData.Clear();
+            _data.SavableData = new SavableData();
             _data.SavableData.Level = newIndex;
 
             _globalEvents.GoToNewLevel?.Invoke();

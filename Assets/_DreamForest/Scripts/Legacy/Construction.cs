@@ -27,5 +27,16 @@ namespace _DreamForest.Legacy
         {
             //todo: place for fx
         }
+
+#if UNITY_EDITOR
+
+        [ContextMenu("Hide all objects to open")]
+        private void HideObjectsToOpen()
+        {
+            foreach (GameObject objectToShow in _objectsToShow) 
+                objectToShow.SetActive(false);
+        }
+
+#endif
     }
 }

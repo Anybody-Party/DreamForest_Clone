@@ -1,3 +1,4 @@
+using _DreamForest.Debug.Editor;
 using _DreamForest.GameServices;
 using RH.Utilities.PseudoEcs;
 using RH.Utilities.ServiceLocator;
@@ -28,14 +29,8 @@ namespace _DreamForest.Systems
         public override void Dispose() => 
             _globalEvents.GoToNewLevel.RemoveListener(ClearOldLevels);
 
-        private void ClearOldLevels()
-        {
-            for (int i = 0; i < _sceneObjects.Levels.Length; i++)
-            {
-                if (_sceneObjects.Levels[i] != null && i < _data.SavableData.Level)
-                    Object.Destroy(_sceneObjects.Levels[i]);
-            }
-        }
+        private void ClearOldLevels() => 
+            GameCheats.HideAllLocationsExceptFirst();
     }
 
     

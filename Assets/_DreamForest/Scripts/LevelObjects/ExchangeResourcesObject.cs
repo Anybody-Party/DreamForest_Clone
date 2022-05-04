@@ -1,4 +1,3 @@
-using _DreamForest.GameServices;
 using _DreamForest.Legacy;
 using _Game.Data;
 using RH.Utilities.ServiceLocator;
@@ -20,6 +19,11 @@ namespace _DreamForest.LevelObjects
 
         public void PerformOnFilled()
         {
+            //should not be called
+        }
+
+        public void PerformOnReceiveResource()
+        {
             _resourceBuffer++;
 
             if (_resourceBuffer > _exchangeRate)
@@ -27,11 +31,6 @@ namespace _DreamForest.LevelObjects
                 _resourceBuffer = 0;
                 _wallet.Add(1, _type);
             }
-        }
-
-        public void PerformOnReceiveResource()
-        {
-            //should not be called
         }
     }
 }
